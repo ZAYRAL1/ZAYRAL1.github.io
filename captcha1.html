@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CAPTCHA con Imagen de Seleccion</title>
+    <style>
+        .captcha-image {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .captcha-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .captcha-choices {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .captcha-choices input[type="radio"] {
+            margin: 0 10px;
+        }
+
+        .captcha-choices label {
+            cursor: pointer;
+        }
+
+        .captcha-submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .captcha-submit input[type="submit"] {
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CAPTCHA con Imagen de Seleccion</h1>
+    <form action="verificar_captcha.php" method="post">
+        <div class="captcha-image">
+            <!-- Aquí puedes colocar la URL de la imagen del CAPTCHA generada dinámicamente -->
+            <img src="globo1.jpg" alt="CAPTCHA">
+        </div>
+        <div class="captcha-choices">
+            <input type="radio" name="captcha_choice" id="choice1" value="1">
+            <label for="choice1">Opcion 1</label>
+            <input type="radio" name="captcha_choice" id="choice2" value="2">
+            <label for="choice2">Opcion 2</label>
+            <input type="radio" name="captcha_choice" id="choice3" value="3">
+            <label for="choice3">Opcion 3</label>
+        </div>
+        <div class="captcha-submit">
+            <input type="submit" value="Verificar">
+        </div>
+    </form>
+</body>
+</html>

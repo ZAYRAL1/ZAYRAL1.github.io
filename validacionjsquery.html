@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        function hola() {
+            alert("Hola, estas por entrar a una pagina prohibida de amor");
+        }
+
+
+        function pulsa() {
+            alert("Autor:JAVA WEB");
+        }
+
+        function cambio() { alert("Cambiado el tamaño"); }
+
+
+        function foco() { alert("Foco en la primera Caja"); }
+        function tecla() { alert("Pulsada tecla"); }
+    </script>
+    <title>Autor: Zayra Lizeth</title>
+</head>
+
+<body onLoad=hola();>
+<body onResize=cambio();>
+
+    <input type="button" value="Autor" onClick=pulsa();>
+    <input type="text" size=”5” onFocus=foco();>
+    <input type="text" size=”5” onKeyPress=tecla();>
+    <p>&nbsp;&nbsp;&nbsp;</p>
+</body>
+
+</html>

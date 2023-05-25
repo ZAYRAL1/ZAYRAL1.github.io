@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <script>
+        var global = 100;
+        function uno() {
+            var local_uno = 1;
+            alert("Global" + global + "Local" + local_uno);
+            dos();
+        }
+        function dos() {
+            var local_dos = 2;
+            alert("Global" + global + "Local" + local_dos);
+        }
+        function valor() {
+            var nombre;
+            nombre = prompt("Introduce Nombre:", " ");
+            alert("hola " + nombre);
+        }
+        function muestra() {
+            var nombre = cnombre.value;
+            alert("Eres " + nombre);
+            cnombre.value = "";
+            cnombre.focus();
+        }
+        function ver() {
+            var edad = parseInt(cedad.value);
+            if (edad <= 18)
+                alert("No tienes acceso. Tienes que tener + 18 años");
+            else
+                alert("Bievenido a la pagina");
+        }
+        function espe() {
+            var tipo = cespe.value;
+            switch (tipo) {
+                case "humano":
+                    alert("Eres un Humano");
+                    break;
+                case "planta":
+                    alert("Eres un Vegetal");
+                    break;
+                case "animal":
+                    alert("Eres del reino Animal");
+                    break;
+                default:
+                    alert("Eres una especie desconocida");
+                    break;
+            }
+        }
+        function opt()
+        {
+            var valor=1
+            while(valor<=10)
+            {
+                alert("Esto sale 10 veces:"+valor);
+                valor++;
+            
+            }
+            
+        }
+        function confirma()
+        {
+            var respuesta=confirm("Pulsa un boton");
+            if (respuesta==true)
+            alert("Has pulsado ACEPTAR");
+            else
+            alert("Has pulsado CANCELAR");
+        }
+        function salida()
+        {
+            var cont=1;
+            var paso=1;
+            var res;
+            for(cont=1; cont<=100;cont++)
+            {
+                alert("Paso" +cont);
+                if(paso==10)
+                {
+                    paso=0;
+                    res=confirm("Deseas seguir?");
+                    if(res==false)
+                    break;
+                }
+                paso++;
+            }
+        
+        }
+        function opt(valor)
+        {
+            if(valor==1)
+            alert("Vas a ir a la pagina 1");
+            else
+            alert("Vas a ir a la pagina 2");
+        }
+        function opt1(valor)
+        {
+            var cadena;
+            switch(valor)
+            {
+                case 1:
+                    cadena="uno";
+                    break;
+                case 2:
+                    cadena="dos";
+                    break;
+                case 3:
+                    cadena="tres";
+                    break;
+
+            }
+            alert("Vinculo "+cadena);
+        }
+    
+    </script>
+    <title>Autor:Programacion WEB</title>
+</head>
+
+<!-----<body onload=valor();>----->
+        <body>
+            Nombre:<input type="text" name="cnombre" id="cnombre" size="20">
+            <input type="button" value="Ver" onclick=muestra();>
+        </body>
+
+        <body>
+            Edad:
+            <input type="text" name="cedad" id="cedad" size="3" onBlur=ver();>
+            <input type="button" value="Ver" onclick=Ver();>
+        </body>
+
+        <body>
+            ESPECIE: <input type="text" name="cespe" id="cespe" size="20" onblur=espe();>
+            <input type="button" value="Ver" onclick=espe();>
+
+        </body>
+        <a href="www.itdurango.edu.mx" onMouseOver=opt();>ir a itdurango</a>
+        <!---<body onLoad=confirma();>--->
+            <body onload=salida();>
+                <body>
+                    <a href="prueba.html" onmouseover=opt(1);>ir a prueba</a>
+                    <a href="prueba2.html" onmouseover=opt(2);>ir a prueba 2</a>
+                </body>
+                <body>
+                    <a href="globos.html" onmouseover=opt(1);>ir a 1</a>
+                    <a href="bolsasymas.html" onmouseover=opt(2);>ir a 2</a>
+                    <a href="peluches.html" onmouseover=opt(3);>ir 3</a>
+                </body>
+
+
+
+    </body>
+
+</html>

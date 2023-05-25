@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario con checkbox</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<label for="acepto_terminos">Acepto los términos y condiciones</label>
+		<input type="checkbox" id="acepto_terminos" name="acepto_terminos" required>
+		<br>
+		<input type="submit" value="Enviar">
+	</form>
+	<script>
+		document.querySelector('form').addEventListener('submit', function(event) {
+			if (!document.getElementById('acepto_terminos').checked) {
+				alert('Debe aceptar los términos y condiciones');
+				event.preventDefault();
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta description="Mi Primera Pagina">
+  <meta keywords="pasteles, pan, fondan, pasteleria, fiestas, eventos">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/14884d4ea0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+  <header class="d-flex justify-content-between">
+    <div class="d-flex">
+      <div id="logotipo"><img src="img/logo.png" alt="Logotipo de la compañia"></div>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="catalogos.php">Catalogos</a>
+        <a href="#contact">Contacto</a>
+        <a href="#about">Sucursales</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <div id="botonera">
+      <form class="">
+        <input type="text" id="" name="" class="">
+        <i class="fa-solid fa-magnifying-glass botones"></i>
+      </form>
+      <i class="fas fa-user-alt botones"></i>
+      <i class="fa-solid fa-cart-shopping botones"></i>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Slide Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner2.jpg" id="img2" class="d-block w-100" alt="Banner2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner1.jpg" id="img2" class="d-block w-100" alt="Banner2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner3.jpg" id="img2" class="d-block w-100" alt="Banner3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <div id="div">
+      Angel Rafael Olivas Garcia, Zayra Lizeth Gonzalez Venegas, Fernando Leonardo Olivas Garcia, Maria Olivas Garcia,
+      Alma Karina Garcia Villarreal, Fernando Leonardo Olivas Ramirez
+    </div><br>
+    <table id="tabla">
+      <tr>
+        <th>Num</th>
+        <th>Nombre</th>
+        <th class="edad">Edad</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Angel</td>
+        <td class="edad">22</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Juan</td>
+        <td class="edad">22</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Alonso</td>
+        <td class="edad">22</td>
+      </tr>
+    </table> -->
+
+    <h3 class="m-2 p-3">Catálogos</h3>
+    <section class="d-flex justify-content-between p-4" id="cardsContent">
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-success">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="m-2 p-3">Los más vendidos...</h3>
+    <section class="d-flex justify-content-between p-4" id="cardsContent">
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-success">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+
+      <div class="card cardPropio">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-link">+Más información</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex">
+      <div>
+        <h4>Udemy business</h4>
+        <h2>Desarrolla las habilidades de tu equipo gracias a Udemy Business</h2>
+        <ul>
+          <li>Acceso ilimitado a más de 19.000 de los mejores cursos de Udemy en cualquier momento y lugar</li>
+          <li>Colección internacional de cursos en 14 idiomas</li>
+          <li>Las certificaciones más populares en tecnología y empresas</li>
+        </ul>
+      </div>
+      <div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <nav id="footerNav" class="nav"></nav>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</html>
